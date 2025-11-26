@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Mazzita — Precios</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --bordo:#7b2430; /* bordo profundo */
+      --rosa-claro:#f6d7db; /* rosa romántico claro */
+      --marfil:#fff8f6;
+      --texto:#40282a;
+      font-synthesis: none;
+    }
+    *{box-sizing:border-box}
+    body{font-family:Inter,system-ui,Arial; background:linear-gradient(180deg,var(--marfil),#fff);color:var(--texto);margin:0;padding:32px;}
+    .card{max-width:720px;margin:24px auto;padding:28px;border-radius:18px;background:linear-gradient(180deg,rgba(255,255,255,0.9),var(--rosa-claro));box-shadow:0 8px 30px rgba(123,36,48,0.08);border:1px solid rgba(123,36,48,0.06)}
+    .brand{display:flex;align-items:center;gap:14px}
+    .logo{width:64px;height:64px;border-radius:50%;background:radial-gradient(circle at 30% 30%,#fff, rgba(255,255,255,0.6));display:flex;align-items:center;justify-content:center;border:2px solid rgba(123,36,48,0.12);font-family:'Playfair Display',serif;color:var(--bordo);font-weight:700}
+    h1{font-family:'Playfair Display',serif;color:var(--bordo);margin:8px 0 18px;font-size:28px}
+    p.lead{margin:0 0 18px;color:rgba(64,40,42,0.8)}
+    table{width:100%;border-collapse:collapse;background:transparent}
+    thead th{text-align:left;padding:10px 12px;font-size:14px;color:var(--bordo);font-weight:600}
+    tbody tr{background:rgba(255,255,255,0.6);border-radius:10px}
+    td{padding:14px 12px;border-bottom:1px dashed rgba(64,40,42,0.06)}
+    td.product{font-weight:600}
+    td.price{text-align:right;font-family:'Playfair Display',serif;color:var(--bordo);width:160px}
+    .note{margin-top:16px;font-size:13px;color:rgba(64,40,42,0.7)}
+    @media (max-width:520px){
+      .card{padding:18px}
+      .logo{width:52px;height:52px}
+      td.price{width:120px}
+    }
+  </style>
+</head>
+<body>
+  <section class="card">
+    <div class="brand">
+      <div class="logo">M</div>
+      <div>
+        <h1>Mazzita — Precios</h1>
+        <p class="lead">Productos disponibles. Pedidos con mínimo 48 hs de antelación.</p>
+      </div>
+    </div>
+
+    <table aria-label="Lista de precios">
+      <thead>
+        <tr>
+          <th>Producto</th>
+          <th style="text-align:right">Precio</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="product">Brownie Oreo</td>
+          <td class="price">$35.000</td>
+        </tr>
+        <tr>
+          <td class="product">Cheesecake frutilla</td>
+          <td class="price">$32.000</td>
+        </tr>
+        <tr>
+          <td class="product">Brownie con merengue</td>
+          <td class="price">$30.000</td>
+        </tr>
+        <tr>
+          <td class="product">Brownie con crema y frutillas</td>
+          <td class="price">$30.000</td>
+        </tr>
+        <tr>
+          <td class="product">Tarta de ricota</td>
+          <td class="price">$25.000</td>
+        </tr>
+              <tr>
+          <td class="product">Key Lime Pie</td>
+          <td class="price">$25.000</td>
+        </tr>
+              <tr>
+          <td class="product">Lemon Pie</td>
+          <td class="price">$27.000</td>
+        </tr>
+              <tr>
+          <td class="product">Coco y dulce de leche</td>
+          <td class="price">$25.000</td>
+        </tr>
+              <tr>
+          <td class="product">Box de cookie clásica</td>
+          <td class="price">$18.000</td>
+        </tr>
+              <tr>
+          <td class="product">Box cookie a elección</td>
+          <td class="price">$22.000</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <p class="note"><strong>Todos los precios de tortas corresponden a molde de 20 cm.</strong><br>Para pedidos: <strong>fifimazzi@gmail.com</strong> — Zona: Palermo y Recoleta. Consultá por envío.</p>
+  </section>
+</body>
+</html>
